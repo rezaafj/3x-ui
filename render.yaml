@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: v2ray
+    env: docker
+    plan: free
+    repo: https://github.com/yourusername/3x-ui
+    branch: main
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /
+    autoDeploy: true
